@@ -34,3 +34,27 @@ Vercel: https://vercel.com/dashboard
 Supabase: https://supabase.com/dashboard
 
 Visila provisioned this. You own it entirely.
+
+## Next Steps
+
+### Environment Setup
+- [ ] Configure Supabase project and database schema
+- [ ] Set up authentication policies and RLS (Row Level Security)
+- [ ] Add environment variables for development and production
+- [ ] Configure email templates for auth notifications
+
+### Deployment
+- [ ] Test app locally with `npm run dev`
+- [ ] Push to GitHub main branch to trigger Vercel deployment
+- [ ] Verify environment variables are set in Vercel dashboard
+- [ ] Test deployed app at your Vercel URL
+- [ ] Set up custom domain (optional)
+
+### Feature Roadmap
+- [ ] Implement [core feature 1]
+- [ ] Implement [core feature 2]
+- [ ] Add user profile customization
+- [ ] Implement data export functionality
+- [ ] Add offline support
+- [ ] Set up analytics and monitoring
+- [ ] Create mobile app (if needed)
