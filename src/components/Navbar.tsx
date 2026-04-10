@@ -64,12 +64,12 @@ export default function Navbar() {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-2" style={{ textDecoration: 'none' }}>
-              <Shield size={22} color="#3B82F6" strokeWidth={2.5} />
+              <Shield size={22} color="var(--color-primary)" strokeWidth={2.5} />
               <span
                 className="font-bold"
                 style={{
                   fontSize: 'var(--text-headline)',
-                  color: '#F1F5F9',
+                  color: 'var(--color-text)',
                   letterSpacing: '-0.01em',
                 }}
               >
@@ -112,7 +112,7 @@ export default function Navbar() {
             {/* Hamburger button — mobile only */}
             <button
               className="md:hidden flex flex-col justify-center items-center gap-[5px] p-2"
-              style={{ color: '#F1F5F9', minHeight: 44, minWidth: 44 }}
+              style={{ color: 'var(--color-text)', minHeight: 44, minWidth: 44 }}
               onClick={() => setOpen(!open)}
               aria-label={open ? 'Close menu' : 'Open menu'}
               aria-expanded={open}
@@ -120,21 +120,21 @@ export default function Navbar() {
               <span
                 className="block w-5 h-[2px] rounded-full transition-all duration-300"
                 style={{
-                  backgroundColor: '#F1F5F9',
+                  backgroundColor: 'var(--color-text)',
                   transform: open ? 'translateY(7px) rotate(45deg)' : 'none',
                 }}
               />
               <span
                 className="block w-5 h-[2px] rounded-full transition-all duration-300"
                 style={{
-                  backgroundColor: '#F1F5F9',
+                  backgroundColor: 'var(--color-text)',
                   opacity: open ? 0 : 1,
                 }}
               />
               <span
                 className="block w-5 h-[2px] rounded-full transition-all duration-300"
                 style={{
-                  backgroundColor: '#F1F5F9',
+                  backgroundColor: 'var(--color-text)',
                   transform: open ? 'translateY(-7px) rotate(-45deg)' : 'none',
                 }}
               />
@@ -197,7 +197,6 @@ export default function Navbar() {
             onClick={() => setOpen(false)}
             aria-label="Close menu"
           >
-            {/* X icon */}
             <svg
               width="18"
               height="18"
