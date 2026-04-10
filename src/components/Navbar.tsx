@@ -44,6 +44,7 @@ export default function Navbar() {
 
   const navLinks = [
     { label: 'Features', to: '/#features' },
+    { label: 'Pricing', to: '/pricing' },
     { label: 'Dashboard', to: '/dashboard' },
     { label: 'Sign in', to: '/login' },
   ]
@@ -77,7 +78,7 @@ export default function Navbar() {
               </span>
             </Link>
 
-            {/* Desktop nav — unchanged */}
+            {/* Desktop nav */}
             <div className="hidden md:flex items-center gap-6">
               <Link
                 to="/#features"
@@ -89,6 +90,17 @@ export default function Navbar() {
                 }}
               >
                 Features
+              </Link>
+              <Link
+                to="/pricing"
+                style={{
+                  color: location.pathname === '/pricing' ? 'var(--color-text)' : 'rgba(241,245,249,0.75)',
+                  fontSize: 'var(--text-subhead)',
+                  fontWeight: 500,
+                  textDecoration: 'none',
+                }}
+              >
+                Pricing
               </Link>
               <Link
                 to="/login"

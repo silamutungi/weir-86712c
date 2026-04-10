@@ -7,6 +7,7 @@ import Matches from './pages/Matches'
 import Licenses from './pages/Licenses'
 import Earnings from './pages/Earnings'
 import Analytics from './pages/Analytics'
+import Pricing from './pages/Pricing'
 import ProtectedRoute from './components/ProtectedRoute'
 
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/pricing" element={<Pricing />} />
         <Route element={<ProtectedRoute />}>
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/matches" element={<Matches />} />

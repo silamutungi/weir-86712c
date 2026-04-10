@@ -68,9 +68,14 @@ export default function Home() {
         <div className="max-w-5xl mx-auto px-6 text-center">
           <h2 className="font-bold mb-6" style={{ fontSize: 'var(--text-title-1)', color: 'var(--color-text)' }}>Your identity is being monetized — just not by you.</h2>
           <p className="mb-8 mx-auto" style={{ fontSize: 'var(--text-body)', color: 'var(--color-text-secondary)', maxWidth: '480px', lineHeight: 'var(--leading-relaxed)' }}>Brands and advertisers spend billions using creator likenesses without permission. WEIR puts that money back in your hands.</p>
-          <Button size="lg" onClick={() => navigate('/signup')} style={{ backgroundColor: 'var(--color-primary)', color: '#ffffff', fontWeight: 600 }}>
-            Get your dashboard
-          </Button>
+          <div className="flex flex-wrap gap-4 justify-center">
+            <Button size="lg" onClick={() => navigate('/signup')} style={{ backgroundColor: 'var(--color-primary)', color: '#ffffff', fontWeight: 600 }}>
+              Get your dashboard
+            </Button>
+            <Button size="lg" variant="outline" onClick={() => navigate('/pricing')} style={{ borderColor: 'var(--color-border)', color: 'var(--color-text)', backgroundColor: 'transparent' }}>
+              See pricing
+            </Button>
+          </div>
         </div>
       </section>
       <Footer />
