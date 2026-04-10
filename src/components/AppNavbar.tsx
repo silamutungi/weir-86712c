@@ -25,7 +25,7 @@ export default function AppNavbar() {
     <nav style={{ backgroundColor: 'var(--color-bg-surface)', borderBottom: '1px solid var(--color-border)' }}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16">
-          <Link to="/dashboard" className="flex items-center gap-2" style={{ textDecoration: 'none' }}>
+          <Link to="/" className="flex items-center gap-2" style={{ textDecoration: 'none' }}>
             <Shield size={22} style={{ color: 'var(--color-primary)' }} strokeWidth={2.5} />
             <span className="font-bold" style={{ fontSize: 'var(--text-headline)', color: 'var(--color-text)', letterSpacing: '-0.01em' }}>WEIR</span>
           </Link>
